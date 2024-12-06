@@ -1392,8 +1392,8 @@ class Image {
         $y1 = round($y1);
         $y2 = round($y2);
 
-        imageline($this->img,$x1,$y1,$x2,$y2,$this->current_color);
-//        $this->DrawLine($this->img, $x1, $y1, $x2, $y2, $this->line_weight, $this->current_color);
+//        imageline($this->img,$x1,$y1,$x2,$y2,$this->current_color);
+        $this->DrawLine($this->img, $x1, $y1, $x2, $y2, $this->line_weight, $this->current_color);
         $this->lastx=$x2;
         $this->lasty=$y2;
     }
